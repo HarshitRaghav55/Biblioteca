@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./script.js"></script>
+    <script src="./jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <header>
+        <nav class="sticky">
+            <div class="row">
+                <img src="./img/logo-removebg-preview.png" alt="logo">
+                <input type="text" placeholder="Search">
+                <button class="open-button" onclick="openForm()">Login</button>
+            </div>
+
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+        
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+        
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+            
+        </nav>
+        <div class="text-box">
+            <h2>Welcome to the<br> world of <span style="color:yellow">biblioteca...</span></h2>
+        </div>
+    </header>
+
+    
+
+    <section>
+        <div class="row">
+            <h2>Browse Genres</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4">
+                <div class="plan-box js--wp-4">
+                    <img src="/img/action.png">
+                </div>
+            </div> 
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <div>
+                            <img src="/img/adult.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/biographies.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4">
+                <div class="plan-box js--wp-4">
+                    <img src="/img/fantasy.png">
+                </div>
+            </div> 
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <div>
+                            <img src="/img/historic.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/horror.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/literary.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4">
+                <div class="plan-box js--wp-4">
+                    <img src="/img/non-fiction.png">
+                </div>
+            </div> 
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <div>
+                            <img src="/img/romance.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/science.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <div class="plan-box">
+                    <div>
+                        <img src="/img/thriller.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Editor's Choice</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-6">
+                <div class="line-box js--wp-4">
+                    <img src="/img/action.png">
+                </div>
+            </div> 
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <div>
+                            <img src="/img/adult.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/biographies.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Trending Books</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-6">
+                <div class="line-box js--wp-4">
+                    <img src="/img/action.png">
+                </div>
+            </div> 
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <div>
+                            <img src="/img/adult.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/biographies.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-6">
+                <div class="line-box">
+                    <div>
+                        <img src="/img/children.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    $('.js-sticky').waypoint(function(direction){
+        if(direction == "down"){
+            $('nav').addClass('sticky')
+        }
+        else{
+            $('nav').removeClass('sticky');
+        }
+    },{
+        offset: '60px;'
+    });
+    </script>
+    
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2022 by Biblioteca. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
