@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,34 +17,8 @@
             <div class="row">
                 <img src="./img/logo-removebg-preview.png" alt="logo">
                 <input type="text" placeholder="Search">
-                <button class="open-button" onclick="openForm()">Login</button>
+                <button class="open-button">Login</button>
             </div>
-
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                  <h1>Login</h1>
-              
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-              
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-              
-                  <button type="submit" class="btn">Login</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-              </div>
-        
-            <script>
-                function openForm() {
-                    document.getElementById("myForm").style.display = "block";
-                }
-        
-                function closeForm() {
-                    document.getElementById("myForm").style.display = "none";
-                }
-            </script>
-            
         </nav>
         <div class="text-box">
             <h2>Welcome to the<br> world of <span style="color:yellow">biblioteca...</span></h2>
@@ -52,7 +27,7 @@
 
     
 
-    <section>
+    <section class="data1">
         <div class="row">
             <h2>Browse Genres</h2>
         </div>
@@ -234,13 +209,13 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col span-1-of-6">
+            <div class="col span-1-of-6">
                 <div class="line-box">
                     <div>
                         <img src="/img/children.png">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="col span-1-of-6">
                 <div class="line-box">
                     <div>
@@ -250,7 +225,7 @@
             </div>
         </div>
     </section>
-    
+
     <script>
     $('.js-sticky').waypoint(function(direction){
         if(direction == "down"){
