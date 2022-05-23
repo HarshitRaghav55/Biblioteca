@@ -5,6 +5,7 @@ const hbs = require("hbs")
 require("./database/connection")
 const Register = require("./models/registers");
 const async = require('hbs/lib/async');
+const { use } = require('express/lib/application');
 const port= process.env.PORT || 3000;
 // console.log(path.join(__dirname,"../public"));
 const staic_path=path.join(__dirname,"../public")
@@ -20,11 +21,12 @@ hbs.registerPartials(partials_path)
 app.get('/',(req,res)=>{
     res.render("index")
 });
-// app.get('/login',(req,res)=>{
-//     res.render("login")
-// })
+
 app.get('/register',(req,res)=>{
     res.render('register')
+})
+app.get('/login',(req,res)=>{
+    res.render("login")
 })
 app.post('/register',async (req,res)=>{
     try{
@@ -39,6 +41,20 @@ app.post('/register',async (req,res)=>{
         res.status(201).render("home")
     } catch(error){
         res.status(400).send(error)
+    }
+})
+app.post('/login',async(req,res)=>{
+    try{
+        const email=req.body.email;
+        const password=req.body.password;
+        const userEmail=await Register.findOne({email:email});
+        if(userEmail.password===password){
+            res.status(201).render("home")
+        }
+        
+
+    }catch(error){
+        res.status.send("invalid email")
     }
 })
 app.listen(port,()=>{
