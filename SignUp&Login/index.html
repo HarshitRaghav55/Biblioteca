@@ -62,8 +62,22 @@
                 <button type="submit" class="btn btn-larger btn-block"/>
                 Sign up
                 </button>
+                <!-- <input type="submit" value="Sign Up" -->
               </div>
             </form>
+            <script>
+              const form = documnet.getElementById('signup');
+              form.addEventListener('submit',registerUser);
+              function registerUser(event){
+                event.preventDefault()
+                const username=document.getElementById('first_name');
+                const lastname=document.getElementById('last_name');
+                const email=document.getElementById('email');
+                const phone=document.getElementById('phone');
+                const password=document.getElementById('password');
+              }
+
+            </script>
           </div>
           <div class="tab-pane fade in" id="login">
             <h2 class="text-uppercase text-center"> Log in</h2>
