@@ -1,0 +1,77 @@
+/* 1023 px and above */
+@media only screen and (max-width: 1200px){
+    .row{
+        padding: 0 2%;
+    }
+    .sticky{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .text-box{
+        width: 100%;
+        padding: 0 2%;
+        margin: 50px;
+    }
+    .sticky button{
+        margin-right: 30px;
+    }
+}
+
+/* Small tablet to big tablet: from 768 to 1023 px */
+@media only screen and (max-width: 1023px){
+    .text-box{
+        font-size: 29px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .data1{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .sticky button{
+        margin-right: 30px;
+    }
+    .row input[type=text]{
+        width:280px;
+        height:25px;
+        margin-top: -10ox;
+        margin: 20px;
+        border: none;
+        position:fixed;
+        margin-left: 20%;
+        background-color: #fff;
+    }
+}
+/* Small phones to small tablets: from 581 to 767 px */
+@media only screen and (max-width: 767px){
+    .text-box{
+        font-size: 25px;
+    }
+    .row input[type=text]{
+        width:230px;
+        height:25px;
+        margin-top: -10ox;
+        margin: 20px;
+        border: none;
+        position:fixed;
+        margin-left: 20%;
+        background-color: #fff;
+    }
+}
+/* from 580 to smaller */
+@media only screen and (max-width: 480px){
+    .text-box{
+        font-size: 30px;
+    }
+    .row input[type=text]{
+        width:230px;
+        height:25px;
+        margin-top: -10ox;
+        margin: 20px;
+        border: none;
+        position:fixed;
+        margin-left: 20%;
+        background-color: #fff;
+    }
+}
