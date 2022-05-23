@@ -22,10 +22,7 @@ const readerSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    confirmPassword:{
-        type:String,
-        required:true
-    }
+   
 })
 
 const Register = new mongoose.model("Reader",readerSchema);
