@@ -36,7 +36,7 @@ app.post('/register',async (req,res)=>{
             password:req.body.password
         })
         const register = await(registerReader.save());
-        res.status(201).render("index")
+        res.status(201).render("home")
     } catch(error){
         res.status(400).send(error)
     }
